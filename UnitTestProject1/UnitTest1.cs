@@ -19,7 +19,7 @@ namespace UnitTestProject1
             CollectionAssert.AreEqual(resultFromFunction, expectedResult);
         }
         [TestMethod]
-        public void ArraySort_Empty_Fails()
+        public void ArraySort_Empty()
         {
             //given
             int[] toTest = new int[0] {};
@@ -28,6 +28,18 @@ namespace UnitTestProject1
             //then
             Assert.IsNotNull(resultFromFunction);
             CollectionAssert.AreEqual(resultFromFunction, expectedResult);
+
+        }
+        [TestMethod]
+        [ExpectedException(typeof(System.NullReferenceException))]
+        public void ArraySort_Null()
+        {
+            //given
+            int[] toTest = null;
+            int[] expectedResult = null;
+            //when
+            int[] resultFromFunction = ArraySort.Sort(toTest);
+            //then
 
         }
     }
