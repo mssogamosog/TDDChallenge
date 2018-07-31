@@ -36,7 +36,6 @@ namespace UnitTestProject1
         {
             //given
             int[] toTest = null;
-            int[] expectedResult = null;
             //when
             int[] resultFromFunction = ArraySort.Sort(toTest);
             //then
