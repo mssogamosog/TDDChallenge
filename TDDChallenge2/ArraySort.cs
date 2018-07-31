@@ -11,9 +11,16 @@ namespace TDDChallenge2
     {
         public static int[] Sort(int[] array)
         {
-
-            Quicksort(array, 0, array.Length - 1);
-            return array;
+            if (array.Length == 0)
+            {
+                return array;
+            }
+            else
+            {
+                Quicksort(array, 0, array.Length - 1);
+                return array;
+            }
+            
 
         }
 
