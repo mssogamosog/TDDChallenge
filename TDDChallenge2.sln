@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDChallenge2", "TDDChallenge2\TDDChallenge2.csproj", "{8EAD44EF-A3F2-44BA-8775-029BA713F3CE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E8B99FC4-A32A-47F8-8A5A-109D9669FB97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{94A82E5F-EF51-45B3-8BBC-783A02807B2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{8EAD44EF-A3F2-44BA-8775-029BA713F3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EAD44EF-A3F2-44BA-8775-029BA713F3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EAD44EF-A3F2-44BA-8775-029BA713F3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94A82E5F-EF51-45B3-8BBC-783A02807B2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A82E5F-EF51-45B3-8BBC-783A02807B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A82E5F-EF51-45B3-8BBC-783A02807B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A82E5F-EF51-45B3-8BBC-783A02807B2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{94A82E5F-EF51-45B3-8BBC-783A02807B2A} = {E8B99FC4-A32A-47F8-8A5A-109D9669FB97}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {89540D61-217B-4F48-B626-C61A520297A6}
