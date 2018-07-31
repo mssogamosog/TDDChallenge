@@ -4,7 +4,7 @@ using TDDChallenge2;
 namespace UnitTestProject1
 {
     [TestClass]
-    public class UnitTest1
+    public class ArraySort_Test
     {
         [TestMethod]
         public void ArraySort_Is_Sorted()
@@ -16,11 +16,19 @@ namespace UnitTestProject1
             int[] resultFromFunction = ArraySort.Sort(toTest);
             //then
             Assert.IsNotNull(resultFromFunction);
-            Assert.IsTrue(resultFromFunction[0] == expectedResult[0]);
-            Assert.IsTrue(resultFromFunction[19] == expectedResult[0]);
-            Assert.IsTrue(resultFromFunction[9] == expectedResult[0]);
-            Assert.IsTrue(resultFromFunction[4] == expectedResult[0]);
-            Assert.IsTrue(resultFromFunction[14] == expectedResult[0]);
+            CollectionAssert.AreEqual(resultFromFunction, expectedResult);
+        }
+        [TestMethod]
+        public void ArraySort_Empty_Fails()
+        {
+            //given
+            int[] toTest = new int[0] {};
+            int[] expectedResult = new int[0] {};
+            int[] resultFromFunction = ArraySort.Sort(toTest);
+            //then
+            Assert.IsNotNull(resultFromFunction);
+            CollectionAssert.AreEqual(resultFromFunction, expectedResult);
+
         }
     }
 }
